@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
-    <h4>MARK T</h4>
   return (
     <nav>
+        <a href="/">MARK T</a>
+
       <ul>
         <li>
           <Link to="/">Home</Link>

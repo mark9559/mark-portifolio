@@ -55,13 +55,15 @@
     background-color: #4F46E5;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
   }
   
   .cv-button:hover,
   .contact-button:hover {
-    background-color: #333; /* Adjust hover color as needed */
-  }
+    background: transparent;
+    transform: translateY(-0.5rem);
+
+    color: blueviolet; }
   
   .my-image {
     width: 350px; /* Adjust the width of the image */

@@ -2,12 +2,20 @@
 :root {
   --primary-color: #4F46E5;
   --secondary-color: #111827;
+  /*--primary-bg-color: beige; /* Light mode background color */
+  /*--text-color: #333333; /* Light mode text color */
+
+  /*.dark-mode {
+    background-color: #1f1f1f; /* Example dark mode background color */
+   /* color: #ffffff; /* Example dark mode text color */
+    /* Adjust other colors for dark mode */
+  
 }
 
 
 /* General styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

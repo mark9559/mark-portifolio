@@ -3,6 +3,10 @@ nav {
     background-color: var(--secondary-color); /* Use primary color for navbar background */
     color: var(--primary-color);
     padding: 10px;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    
   }
   
   nav ul {
