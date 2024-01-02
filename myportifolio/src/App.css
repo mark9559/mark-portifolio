@@ -23,28 +23,7 @@ header {
   text-align: center;
 }
 
-/* Navigation styles */
-nav {
-  background-color: var(--secondary-color); /* Use primary color for navbar background */
-  color: var(--primary-color);
-  padding: 10px;
-}
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
 
 /* Footer styles */
 footer {
@@ -56,16 +35,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
-/* Home Component styles */
-.home-container {
-  padding: 40px;
-  text-align: center;
-}
-
-.home-container h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
 

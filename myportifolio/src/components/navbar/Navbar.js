@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
     <h4>MARK T</h4>

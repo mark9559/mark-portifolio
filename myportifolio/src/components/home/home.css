@@ -1,0 +1,73 @@
+/* Updated Home Component styles */
+.home-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align items vertically */
+    height: 80vh; /* Adjust as needed */
+    padding: 20px;
+    margin-top:0px;
+  }
+  
+  .home-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .text-content {
+    margin-bottom: 20px;
+    text-align: center; /* Center-aligns text content */
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeInAnimation 2s ease forwards; /* Apply animation */
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateY(30px); /* Optional: Slide up effect */
+    }
+    to {
+      opacity: 1; /* Transition to opacity 1 */
+      transform: translateY(0); /* Optional: Return to original position */
+    }
+  }
+
+  .text-content p {
+    /* Additional styles for the paragraph */
+    margin: 0 auto; /* Centers the paragraph horizontally */
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin-bottom: 20px;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    align-items: center; /* Centers the buttons */
+    gap: 1.2rem;
+    margin-left: 150px;  }
+  
+  .cv-button,
+  .contact-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4F46E5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cv-button:hover,
+  .contact-button:hover {
+    background-color: #333; /* Adjust hover color as needed */
+  }
+  
+  .my-image {
+    width: 350px; /* Adjust the width of the image */
+    height: 350px; /* Adjust the height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+
+  

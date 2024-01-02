@@ -3,11 +3,11 @@
 import React from 'react';
 import './App.css'; // Import the combined CSS file
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import Route and Routes from react-router-dom
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Navbar from './components/navbar/Navbar';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
