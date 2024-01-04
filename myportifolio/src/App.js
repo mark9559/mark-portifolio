@@ -8,12 +8,15 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
+import ThemePicker from './components/themepicker/ThemePicker.js';
+
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

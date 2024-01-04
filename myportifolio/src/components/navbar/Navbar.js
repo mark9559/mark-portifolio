@@ -1,14 +1,22 @@
-// components/Navbar.js
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './navbar.css';
+import ThemePicker from '../themepicker/ThemePicker';
+import './navbar.css'
+import { BsFillPaletteFill } from 'react-icons/bs'; // Import an icon from React Icons
+
 
 const Navbar = () => {
+  const [showThemePicker, setShowThemePicker] = useState(false);
+
+  const toggleThemePicker = () => {
+    setShowThemePicker(!showThemePicker);
+  };
+
   return (
     <nav>
-        <a href="/">MARK T</a>
-
+      <div className="logo">
+        <Link to="/">MARK T</Link>
+      </div>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -22,8 +30,11 @@ const Navbar = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        {/* Add other links for additional routes */}
+        <li>
+          <button className='theme-btn' onClick={toggleThemePicker}><BsFillPaletteFill /></button>
+        </li>
       </ul>
+      {showThemePicker && <ThemePicker />}
     </nav>
   );
 };
