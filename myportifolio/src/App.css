@@ -43,3 +43,10 @@ footer {
   width: 100%;
 }
 
+nav {
+  background-color: var(--primary-color); /* Apply primary color to navbar background */
+}
+
+button {
+  background-color: var(--primary-color); /* Apply primary color to buttons */
+}

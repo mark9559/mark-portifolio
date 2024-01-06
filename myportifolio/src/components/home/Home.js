@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './home.css';
 import Typed from 'react-typed';
-import myImage from '../../assets/mark.jpg'; // Import your image
+import myImage from '../../assets/markk.jpg'; // Import your image
 
 const Home = () => {
   useEffect(() => {

@@ -5,14 +5,24 @@
     top: 50%; /* Adjust the positioning */
     left: 50%; /* Adjust the positioning */
     transform: translate(-50%, -50%);
-    background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 10; /* Ensure it's above other content */
     border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    animation: animateModal 500ms ease-in forwards;
+    background: #dedede;
+
     
   }
-  
+  @keyframes animateModal {
+    to {
+        opacity: 1;
+    }
+}
+
+
   .theme-picker h3 {
     margin-bottom: 10px;
   }
