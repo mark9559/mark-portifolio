@@ -22,6 +22,10 @@
   .contact-icons a:hover {
     color: #007bff; /* Change color on hover */
   }
+
+  .contact-icons a span{
+    margin-left: 8px;
+  }
   
   /* Get in touch */
   .contact-get-in-touch {
@@ -33,7 +37,7 @@
   .contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
   }
   
@@ -57,7 +61,28 @@
   
   .contact-form button:hover {
     background-color: #0056b3;
+    
   }
   
   /* Adjust form input/textarea styles as needed */
+  
+  /* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    .contact-icons a {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
   

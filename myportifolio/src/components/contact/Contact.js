@@ -1,10 +1,16 @@
 // components/Contact/Contact.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 import './contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,28 +31,35 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" data-aos="fade-up">
       <h2>Get In Touch</h2>
       <p className="contact-description">
         Thank you for visiting! Please feel free to get in touch via email or social media.
       </p>
-      <div className="contact-icons">
-        <a href="mailto:your-email@example.com">
+      <h2>Socials</h2>
+
+      <div className="contact-icons" data-aos="fade-up">
+        <a href="mailto:mwangimark57@gmail.com">
           <FaEnvelope />
+          <span>Email</span>
         </a>
-        <a href="https://www.linkedin.com/your-profile">
+        <a href="https://www.linkedin.com/in/mark-mwangi-188b70249/">
           <FaLinkedin />
+          <span>Linkedin</span>
         </a>
-        <a href="https://github.com/your-profile">
+        <a href="https://github.com/mark9559">
           <FaGithub />
+          <span>GitHub</span>
         </a>
-        <a href="https://twitter.com/your-profile">
+        <a href="https://twitter.com/mwangimarkt">
           <FaTwitter />
+          <span>Twitter</span>
         </a>
       </div>
       <p className="contact-get-in-touch">Let's Connect!</p>
+      <h2>Send Me a Message</h2>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit} data-aos="fade-up">
         <input
           type="text"
           name="name"

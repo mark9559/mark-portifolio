@@ -3,14 +3,17 @@
 import React from 'react';
 import './about.css';
 import myImg from '../../assets/mark.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const About = () => {
   return (
     <div className="about-container">
-      <div className="about-image">
+      <div className="about-image" data-aos="fade-in">
         {/* Your image goes here */}
         <img src={myImg} alt="My Image" />
       </div>
-      <div className="about-description">
+      <div className="about-description" data-aos="fade-up">
         <h2>About Me</h2>
         <p>
           My name is Mark Mwangi. I am from Nairobi, Kenya.
