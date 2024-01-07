@@ -43,11 +43,11 @@ const Services = () => {
           </div>
           <div className="service-card">
             <h5 className="service-title">Frameworks and Libraries</h5>
-            {/* Add content for languages */}
+            {/* Add content for frameworks and libraries */}
           </div>
           <div className="service-card">
             <h5 className="service-title">Tools and Databases</h5>
-            {/* Add content for languages */}
+            {/* Add content for tools and libraries */}
           </div>
           {/* Add similar cards for frameworks/libraries and tools/databases */}
         </div>
