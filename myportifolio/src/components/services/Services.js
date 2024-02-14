@@ -1,55 +1,51 @@
 import React from 'react';
-import './services.css';
+import './services.css'; // Import your custom styles if needed
+import { Button } from 'flowbite-react';
+
 
 const Services = () => {
   return (
     <div className="services-container">
-      <div className="services-top">
-        <h2>Services</h2>
-        <div className="service-cards">
+      <h1 className="section-title">Skills</h1>
+      <div className="cards-container">
+        {/* Service Card 1 */}
         <div className="service-card">
-            <h5 className="service-title">Frontend</h5>
-            <div className="progress-circle">
-              <div className="progress-circle-bg"></div>
-              <div className="progress-circle-fill"></div>
-              <span className="progress-label">65%</span>
-            </div>
-          </div>
-          <div className="service-card">
-            <h5 className="service-title">Backend</h5>
-            <div className="progress-circle">
-              <div className="progress-circle-bg"></div>
-              <div className="progress-circle-fill"></div>
-              <span className="progress-label">55%</span>
-            </div>
-          </div>
-          <div className="service-card">
-            <h5 className="service-title">UI/UX Design</h5>
-            <div className="progress-circle">
-              <div className="progress-circle-bg"></div>
-              <div className="progress-circle-fill"></div>
-              <span className="progress-label">75%</span>
-            </div>
-          </div>
-          {/* Add similar cards for UI/UX design and Backend */}
-        </div>
-      </div>
+          <h2 className='mb-5'>FrontEnd Technologies</h2>
+          <div className="chips-container ">
+          <Button color="dark"  pill>HTML</Button>
+          <Button color="dark"  pill>CSS</Button>
+          <Button color="dark"  pill>JavaScript</Button>
+          <Button color="dark"  pill>React.js</Button>
+          <Button color="dark"  pill>BootStrap</Button>
+          <Button color="dark"  pill>Tailwind</Button>
 
-      <div className="services-bottom">
-        <div className="service-cards">
-          <div className="service-card">
-            <h5 className="service-title">Languages</h5>
-            {/* Add content for languages */}
+
           </div>
-          <div className="service-card">
-            <h5 className="service-title">Frameworks and Libraries</h5>
-            {/* Add content for frameworks and libraries */}
+              
+            
+        </div>
+
+        {/* Service Card 2 */}
+        <div className="service-card">
+          <h2 className='mb-5' >BackEnd Technologies</h2>
+          <div className="chips-container">
+          <Button color="dark"  pill>Python</Button>
+          <Button color="dark"  pill>Flask</Button>
+          <Button color="dark"  pill>Node.js</Button>
+          <Button color="dark"  pill>JSON</Button>
           </div>
-          <div className="service-card">
-            <h5 className="service-title">Tools and Databases</h5>
-            {/* Add content for tools and libraries */}
+        </div>
+
+        {/* Service Card 2 */}
+        <div className="service-card">
+          <h2 className='mb-5'>Tools and Databases</h2>
+          <div className="chips-container">
+          <Button color="dark"  pill>SQL</Button>
+          <Button color="dark"  pill>Postgres</Button>
+          <Button color="dark"  pill>Git</Button>
+          <Button color="dark"  pill>GitHub</Button>
+          <Button color="dark"  pill>Figma</Button>
           </div>
-          {/* Add similar cards for frameworks/libraries and tools/databases */}
         </div>
       </div>
     </div>

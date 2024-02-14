@@ -5,6 +5,8 @@ import './about.css';
 import myImg from '../../assets/mark.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Button } from 'flowbite-react';
+
 
 const About = () => {
   return (
@@ -20,7 +22,11 @@ const About = () => {
 
           As a Full Stack Developer, I specialize in crafting seamless web solutions that blend innovation with functionality. With a knack for front-end aesthetics and robust back-end architecture, I bring ideas to life by harnessing the power of various technologies. Simultaneously, as a Business Development Consultant, I leverage my technical expertise to drive strategic growth initiatives, identifying opportunities, and fostering lasting partnerships. My passion lies in bridging the gap between technology and business, delivering solutions that not only meet but exceed expectations.
         </p>
-        <button className="cv-button">Download CV</button>
+        <div className="flex flex-wrap gap-4 justify-center mt-8">
+              <Button color="purple" pill>
+                Download CV
+              </Button>
+        </div>
       </div>
     </div>
   );

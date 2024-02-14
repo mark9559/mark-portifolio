@@ -10,13 +10,18 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import ThemePicker from './components/themepicker/ThemePicker.js';
 import Services from './components/services/Services.js';
+// import './index.css'
+import CustomFooter from './components/Footer.js';
+import FlowbiteNavbar from './components/navbar/Navbar';
+import FlowbiteFooter from './components/Footer.js';
 
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar />
+        <FlowbiteNavbar />
+
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +30,9 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
+
+        <FlowbiteFooter />
       </div>
     </BrowserRouter>
   );
