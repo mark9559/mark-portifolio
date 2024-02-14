@@ -7,7 +7,7 @@
     flex-direction: column; /* Align items vertically */
     height: 80vh; /* Adjust as needed */
     padding: 20px;
-    margin-top:0px;
+    margin-top: 0;
   }
   
   .home-container h1 {
@@ -70,6 +70,61 @@
     height: 350px; /* Adjust the height of the image */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the container */
+    transition: transform 0.3s ease; /* Adds a transition effect */
+
   }
 
-  
+  .my-image:hover{
+    transform: scale(1.1); /* Scales the image on hover */
+
+  }
+
+  /* home.css */
+
+
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .cv-button,
+  .contact-button {
+    font-size: 1rem;
+    margin-top: 1rem; /* Add spacing between buttons on smaller screens */
+  }
+}
+
+/* Media queries for even smaller screens, like mobile phones */
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .cv-button,
+  .contact-button {
+    font-size: 0.9rem;
+    margin-top: 1rem; /* Add spacing between buttons on smaller screens */
+  }
+}

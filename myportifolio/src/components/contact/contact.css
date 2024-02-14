@@ -10,28 +10,39 @@
   .contact-description {
     margin-bottom: 20px;
   }
-  
   /* Contact icons */
-  .contact-icons a {
-    font-size: 24px;
-    margin-right: 15px;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  .contact-icons a:hover {
-    color: #007bff; /* Change color on hover */
-  }
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  .contact-icons a span{
-    margin-left: 8px;
-  }
-  
-  /* Get in touch */
-  .contact-get-in-touch {
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+.contact-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.contact-icons a span {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Get in touch */
+.contact-get-in-touch {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
   
   /* Form styles */
   .contact-form {
