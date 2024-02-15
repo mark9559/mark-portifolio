@@ -15,7 +15,7 @@
   }
   
   .project-card {
-    background-color: #7b7878;
+    background-color: rgba(0, 123, 255, 0.085);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -66,4 +66,9 @@
     to {
         opacity: 1;
     }
+}
+
+.projects-card{
+  background-color: rgba(0, 123, 255, 0.085);
+
 }
