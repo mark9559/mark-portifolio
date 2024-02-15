@@ -1,6 +1,6 @@
 // components/About/About.js
 
-import React from 'react';
+import React,{ useEffect } from 'react';
 import './about.css';
 import myImg from '../../assets/mark.jpg'
 import AOS from 'aos';
@@ -9,6 +9,11 @@ import { Button } from 'flowbite-react';
 
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="about-container">
       <div className="about-image" data-aos="fade-in">

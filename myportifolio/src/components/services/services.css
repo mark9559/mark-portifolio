@@ -22,7 +22,9 @@
   padding: 20px;
   border-radius: 8px;
   flex-basis: calc(33.33% - 20px); /* Set a flexible basis for each card to create a multi-column layout */
-  background-color: rgba(0, 123, 255, 0.2);
+  background-color: rgba(0, 123, 255, 0.085);
+  box-shadow: solid #081943; /* Add box shadow */
+
 
 }
 
