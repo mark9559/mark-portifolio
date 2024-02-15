@@ -40,11 +40,11 @@ const Contact = () => {
 
   return (
     <div className="contact-container" data-aos="fade-up">
-      <h1 className="contact-get-in-touch">Get In Touch</h1>
+      <h1 className="contact-get-in-touch text-purple-600 ">Get In Touch</h1>
       <p className="contact-description">
         Thank you for visiting! Please feel free to get in touch via email or social media.
       </p>
-      <h2 className="contact-get-in-touch">Socials</h2>
+      <h2 className="contact-socials text-purple-600">Socials</h2>
 
       <div className="contact-icons" data-aos="fade-up">
         <div className="social-icon">
@@ -72,8 +72,8 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <p className="contact-get-in-touch">Let's Connect!</p>
-      <h2 className="contact-get-in-touch">Send Me a Message</h2>
+      <p className="contact-get-in-touch text-purple-600">Let's Connect!</p>
+      <h2 className="contact-message">Send Me a Message</h2>
 
       <form className="contact-form" onSubmit={handleSubmit} data-aos="fade-up">
         <div className="form-group">
@@ -112,7 +112,7 @@ const Contact = () => {
             required
           />
         </div>
-        <Button type="submit">Send Message</Button>
+        <Button  gradientMonochrome="purple" type="submit">Send Message</Button>
       </form>
     </div>
   );

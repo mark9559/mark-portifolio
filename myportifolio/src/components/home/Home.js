@@ -26,7 +26,7 @@ const Home = () => {
           />
         </div>
         <div className="text-content text-center" data-aos="fade-up" data-aos-duration="1000">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Mark Mwangi</h1>
+          <h1 className="text-4xl text-purple-600 sm:text-5xl font-bold mb-4">Mark Mwangi</h1>
           <h2 className="text-lg sm:text-xl mb-6">
             I am{' '}
             <Typed

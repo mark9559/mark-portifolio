@@ -16,7 +16,7 @@ const About = () => {
         <img src={myImg} alt="My Image" />
       </div>
       <div className="about-description" data-aos="fade-up">
-        <h2>About Me</h2>
+        <h2 className='font-bold'>About Me</h2>
         <p>
           My name is Mark Mwangi. I am from Nairobi, Kenya.
 

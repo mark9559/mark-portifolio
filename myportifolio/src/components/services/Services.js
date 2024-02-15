@@ -6,11 +6,11 @@ import { Button } from 'flowbite-react';
 const Services = () => {
   return (
     <div className="services-container">
-      <h1 className="section-title">Skills</h1>
+      <h1 className="section-title font-bold text-purple-600">Skills</h1>
       <div className="cards-container">
         {/* Service Card 1 */}
         <div className="service-card">
-          <h2 className='mb-5'>FrontEnd Technologies</h2>
+          <h2 className='mb-5 font-bold'>FrontEnd Technologies</h2>
           <div className="chips-container ">
           <Button color="dark"  pill>HTML</Button>
           <Button color="dark"  pill>CSS</Button>
@@ -27,7 +27,7 @@ const Services = () => {
 
         {/* Service Card 2 */}
         <div className="service-card">
-          <h2 className='mb-5' >BackEnd Technologies</h2>
+          <h2 className='mb-5 font-bold' >BackEnd Technologies</h2>
           <div className="chips-container">
           <Button color="dark"  pill>Python</Button>
           <Button color="dark"  pill>Flask</Button>
@@ -38,7 +38,7 @@ const Services = () => {
 
         {/* Service Card 2 */}
         <div className="service-card">
-          <h2 className='mb-5'>Tools and Databases</h2>
+          <h2 className='mb-5 font-bold'>Tools and Databases</h2>
           <div className="chips-container">
           <Button color="dark"  pill>SQL</Button>
           <Button color="dark"  pill>Postgres</Button>

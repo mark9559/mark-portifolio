@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 40px;
+  margin-top: 20px;
 }
 
 .about-image img {
@@ -26,7 +27,7 @@
 }
 
 .about-description h2 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 20px;
 }
 

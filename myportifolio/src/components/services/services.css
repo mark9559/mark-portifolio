@@ -3,6 +3,7 @@
 .services-container {
   text-align: center;
   padding: 40px;
+  margin: 20px;
 }
 
 .section-title {
@@ -17,7 +18,7 @@
 }
 
 .service-card {
-  border: 1px solid #ccc;
+  border: 1px solid #081943;
   padding: 20px;
   border-radius: 8px;
   flex-basis: calc(33.33% - 20px); /* Set a flexible basis for each card to create a multi-column layout */
