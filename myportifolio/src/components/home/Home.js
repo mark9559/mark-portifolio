@@ -4,7 +4,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './home.css';
 import myImage from '../../assets/markk.jpg';
+import CVFile from '../../assets/Mark CV.pdf';
 import { Button } from 'flowbite-react';
+import { Link } from 'react-router-dom';
+
 
 
 const Home = () => {
@@ -27,7 +30,7 @@ const Home = () => {
         </div>
         <div className="text-content text-center" data-aos="fade-up" data-aos-duration="1000">
           <h1 className="text-4xl text-purple-600 sm:text-5xl font-bold mb-4">Mark Mwangi</h1>
-          <h2 className="text-lg sm:text-xl mb-6">
+          <h2 className="text-lg sm:text-xl font-bold mb-6">
             I am{' '}
             <Typed
               strings={['a Full-Stack Software Developer', 'a Business Development Consultant']}
@@ -41,12 +44,16 @@ const Home = () => {
             technology and business development.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-8">
+            <a href={CVFile} download="Mark CV.pdf">
               <Button color="purple" pill>
                 Download CV
               </Button>
+            </a>
+            <Link to="/contact">
               <Button color="purple" pill>
                 Get In Touch
               </Button>
+            </Link>
           </div>
         </div>
       </div>

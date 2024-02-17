@@ -16,7 +16,7 @@ const Services = () => {
       <h1 className="section-title font-bold text-purple-600">Skills</h1>
       <div className="cards-container">
         {/* Service Card 1 */}
-        <div className="service-card" data-aos="fade-up">
+        <div className="service-card " data-aos="fade-up">
           <h2 className='mb-5 font-bold'>FrontEnd Technologies</h2>
           <div className="chips-container ">
           <Button color="dark"  pill>HTML</Button>
