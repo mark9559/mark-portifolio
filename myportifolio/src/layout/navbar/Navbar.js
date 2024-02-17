@@ -10,7 +10,7 @@ const FlowbiteNavbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-3  fixed top-0 w-full z-50 mt-1">
+    <nav className="bg-gray-800 p-3  fixed top-0 w-full z-50 ">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-indigo-500 text-xl lg:text-2xl font-bold">
@@ -85,7 +85,7 @@ const FlowbiteNavbar = () => {
               to="/services"
               className="block py-2 hover:text-gray-300 transition duration-300"
             >
-              Services
+              Skills
             </Link>
             <Link
               to="/projects"
