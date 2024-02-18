@@ -3,7 +3,6 @@ import {
   FaEnvelope,
   FaLinkedin,
   FaGithub,
-  FaTwitter,
 } from 'react-icons/fa';
 import {
   Button,
@@ -13,6 +12,9 @@ import {
 import './contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   useEffect(() => {
@@ -67,10 +69,11 @@ const Contact = () => {
         </div>
         <div className="social-icon">
           <a href="https://twitter.com/mwangimarkt">
-            <FaTwitter />
-            <span>Twitter</span>
+            <FontAwesomeIcon icon={faXTwitter} />
+            <span>X(Twitter)</span>
           </a>
         </div>
+
       </div>
       <p className="contact-get-in-touch ">Let's Connect!</p>
       <h2 className="contact-message">Send Me a Message</h2>
