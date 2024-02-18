@@ -9,11 +9,12 @@
 }
 
 .about-image img {
-  width: 400px; /* Adjust the image width */
-  height: 400px; /* Adjust the image height */
-  border-radius: 50%; /* Makes the image circular */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  width: 500px; /* Adjust the image width */
+  height: 500px; /* Adjust the image height */
+  /* border-radius: 50%; Makes the image circular */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); Adds a subtle shadow */
   transition: transform 0.3s ease; /* Adds a transition effect */
+  margin-right: 10px;
 }
 
 .about-image img:hover {
