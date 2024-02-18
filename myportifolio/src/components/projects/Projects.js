@@ -60,7 +60,7 @@ const Projects = () => {
         <h2 className="text-3xl font-bold mb-10 mt-10 text-purple-600" data-aos="fade-up">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="projects-card rounded-lg overflow-hidden shadow-lg mb-8 " data-aos="fade-up">
+            <div key={project.id} className="projects-card rounded-lg overflow-hidden shadow-lg mb-8 hover:scale-105 transition-transform" data-aos="fade-up">
               <img className="w-full h-50 object-cover transition-transform duration-300 transform group-hover:scale-105" src={project.thumbnail} alt={project.title} />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2" data-aos="fade-up">{project.title}</h3>
