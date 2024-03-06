@@ -9,7 +9,7 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Services from './components/services/Services.js';
 import Layout from './layout/Layout.js';
-import WelcomePage from './components/welcomepage/WelcomePage.js';
+// import WelcomePage from './components/welcomepage/WelcomePage.js';
 
 
 
@@ -22,7 +22,7 @@ function App() {
 
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/welcome" element={<WelcomePage />} />
+            {/* <Route path="/welcome" element={<WelcomePage />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
