@@ -45,9 +45,9 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'Portifolio',
+      title: 'Portfolio',
       thumbnail: thumbnail4,
-      description: 'This is my portifolio template built using React Js.',
+      description: 'This is my portfolio template built using React Js and Tailwind.',
       demoLink: 'https://github.com/mark9559/mark-portifolio',
       githubLink: 'https://github.com/mark9559/mark-portifolio',
     },
