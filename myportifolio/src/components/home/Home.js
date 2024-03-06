@@ -6,9 +6,8 @@ import './home.css';
 import myImage from '../../assets/markk.jpg';
 import CVFile from '../../assets/Mark CV.pdf';
 import { Button } from 'flowbite-react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { useHistory } from 'react-router-dom';
-
 
 
 const Home = () => {
@@ -19,27 +18,13 @@ const Home = () => {
     });
   }, []);
   
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    // Add a timeout to simulate user interaction
-    const timeout = setTimeout(() => {
-      navigate.push('/welcome');
-    }, 5000); // Adjust the timeout as needed
-
-    // Cleanup the timeout to avoid memory leaks
-    return () => clearTimeout(timeout);
-
-  }, [navigate]);
-
-
   return (
     <div className="home-container bg-gray-900 text-white min-h-screen flex items-center justify-center">
       <div className="content max-w-5xl mx-auto p-8 sm:p-12 flex flex-col items-center">
         <div className="image-content mb-8" data-aos="fade-in">
           <img
             src={myImage}
-            alt="My Image"
+            alt="Mark's Profile"
             className="my-image rounded-full shadow-md w-64 h-64 object-cover"
           />
         </div>

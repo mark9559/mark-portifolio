@@ -20,11 +20,7 @@ const WelcomePage = ({ history }) => {
   return (
     <div className="welcome-page">
       <h1 className="welcome-text">Welcome to My Portfolio</h1>
-      <div className="portfolio-text">
-        <p>Explore my projects</p>
-        <p>Discover my skills</p>
-        <p>Get in touch with me</p>
-      </div>
+      
     </div>
   );
 };
