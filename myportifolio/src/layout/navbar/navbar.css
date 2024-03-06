@@ -1,63 +1,31 @@
-/* navbar.css */
+/* styles.css
 
-/* Navigation styles */
-nav {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 10px;
-  top: 0;
-  left: 0;
-  z-index: 9;
-  display: flex;
-  justify-content: space-between; /* Align logo and links horizontally */
-  align-items: center; /* Vertically align items */
+@keyframes enterLink {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
+@keyframes exitLink {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
 
-nav ul li {
-  margin: 0 10px;
+.animate-enter-link {
+  animation: enterLink 0.3s ease-out;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: var(--primary-color);
-  position: relative;
-}
-
-/* Hover effect */
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: blue; /* Underline color */
-  transition: width 0.3s ease; /* Smooth transition */
-}
-
-nav ul li a:hover::after {
-  width: 100%; /* Display underline on hover */
-}
-
-/* Logo styles */
-.logo a {
-  font-weight: bold;
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #333333;
-  margin-right: 20px; /* Adjust margin for spacing */
-}
-
-.theme-btn {
-  background: transparent;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
+.animate-exit-link {
+  animation: exitLink 0.3s ease-out;
+} */

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 const FlowbiteNavbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -9,8 +9,12 @@ const FlowbiteNavbar = () => {
     setShowSidebar(!showSidebar);
   };
 
+  const closeSidebar = () => {
+    setShowSidebar(false);
+  };
+
   return (
-    <nav className="bg-gray-800 p-3  fixed top-0 w-full z-50 ">
+    <nav className="bg-gray-800 p-3 fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-indigo-500 text-xl lg:text-2xl font-bold">
@@ -35,24 +39,28 @@ const FlowbiteNavbar = () => {
           <Link
             to="/about"
             className="text-indigo-500 font-bold hover:text-indigo-600 transform transition-transform duration-300 hover:translate-y-1"
+            onClick={closeSidebar} 
           >
             About
           </Link>
           <Link
             to="/services"
             className="text-indigo-500 font-bold hover:text-indigo-600 transform transition-transform duration-300 hover:translate-y-1"
+            onClick={closeSidebar} 
           >
             Skills
           </Link>
           <Link
             to="/projects"
             className="text-indigo-500 font-bold hover:text-indigo-600 transform transition-transform duration-300 hover:translate-y-1"
+            onClick={closeSidebar} 
           >
             Projects
           </Link>
           <Link
             to="/contact"
             className="text-indigo-500 font-bold hover:text-indigo-600 transform transition-transform duration-300 hover:translate-y-1"
+            onClick={closeSidebar} 
           >
             Contact
           </Link>
@@ -66,36 +74,41 @@ const FlowbiteNavbar = () => {
             className="absolute bottom-4 left-4 text-white text-2xl focus:outline-none"
             onClick={toggleSidebar}
           >
-            <FaTimes />
+            {/* <FaTimes /> */}
           </button>
           <div className="text-white text-2xl font-bold mt-12 space-y-2">
             <Link
               to="/"
               className="block py-2 hover:text-gray-300 transition duration-300"
+              onClick={closeSidebar} 
             >
               Home
             </Link>
             <Link
               to="/about"
               className="block py-2 hover:text-gray-300 transition duration-300"
+              onClick={closeSidebar} 
             >
               About
             </Link>
             <Link
               to="/services"
               className="block py-2 hover:text-gray-300 transition duration-300"
+              onClick={closeSidebar} 
             >
               Skills
             </Link>
             <Link
               to="/projects"
               className="block py-2 hover:text-gray-300 transition duration-300"
+              onClick={closeSidebar} 
             >
               Projects
             </Link>
             <Link
               to="/contact"
               className="block py-2 hover:text-gray-300 transition duration-300"
+              onClick={closeSidebar} 
             >
               Contact
             </Link>
