@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 import {
   FaEnvelope,
   FaLinkedin,
@@ -16,6 +18,8 @@ import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
+const MySwal = withReactContent(Swal);
+
 const Contact = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -32,12 +36,40 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Send email functionality (you'll need backend logic for this)
-    console.log('Sending email...', formData);
-    // Clear the form after submission
-    setFormData({ name: '', email: '', message: '' });
+  
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        MySwal.fire({
+          icon: 'success',
+          title: 'Email Sent!',
+          text: 'Your message has been sent successfully.',
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        MySwal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Failed to send email. Please try again.',
+        });
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      MySwal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'An unexpected error occurred. Please try again.',
+      });
+    }
   };
 
   return (
