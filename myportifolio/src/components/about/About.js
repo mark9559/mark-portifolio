@@ -19,7 +19,7 @@ const About = () => {
     <div className="about-container">
       <div className="about-image" data-aos="fade-in">
         {/* Your image goes here */}
-        <img src={myImg} alt="My Image" />
+        <img src={myImg} alt="My Profile" />
       </div>
       <div className="about-description" data-aos="fade-up">
         <h2 className='font-bold' data-aos="fade-up">About Me</h2>

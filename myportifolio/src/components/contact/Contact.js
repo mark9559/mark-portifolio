@@ -126,7 +126,7 @@ const Contact = () => {
         <div className="form-group">
           <label htmlFor="email"></label>
           <TextInput
-            type="email"
+            type="text"
             id="email"
             name="email"
             placeholder="Subject"
